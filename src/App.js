@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-
+const cardImage = [
+  { "src": "/img/Barbarian_icons_01_t.PNG" },
+  { "src": "/img/Barbarian_icons_02_t.PNG" },
+  { "src": "/img/Barbarian_icons_03_t.PNG" },
+  { "src": "/img/Barbarian_icons_04_t.PNG" },
+  { "src": "/img/Barbarian_icons_05_t.PNG" },
+  { "src": "/img/Barbarian_icons_06_t.PNG" }
+]
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Magic Match</h1>
+      <button>New Game</button>
     </div>
   );
 }
