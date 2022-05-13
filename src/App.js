@@ -3,12 +3,12 @@ import './App.css';
 import SingleCard from './components/SingleCard';
 
 const cardImages = [
-  { "src": "img/Barbarian_icons_01_t.PNG", matched: false },
-  { "src": "/img/Barbarian_icons_02_t.PNG", matched: false },
-  { "src": "/img/Barbarian_icons_03_t.PNG", matched: false },
-  { "src": "/img/Barbarian_icons_04_t.PNG", matched: false },
-  { "src": "/img/Barbarian_icons_05_t.PNG", matched: false },
-  { "src": "/img/Barbarian_icons_06_t.PNG", matched: false }
+  { "src": "img/Barbarian_icons_01_b.PNG", matched: false },
+  { "src": "/img/Barbarian_icons_02_b.PNG", matched: false },
+  { "src": "/img/Barbarian_icons_03_b.PNG", matched: false },
+  { "src": "/img/Barbarian_icons_04_b.PNG", matched: false },
+  { "src": "/img/Barbarian_icons_11_b.PNG", matched: false },
+  { "src": "/img/Barbarian_icons_06_b.PNG", matched: false }
 ]
 function App() {
   const [cards, setCards] = useState([])
