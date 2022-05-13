@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 const cardImages = [
-  { "src": "/img/Barbarian_icons_01_t.PNG" },
+  { "src": "img/Barbarian_icons_01_t.PNG" },
   { "src": "/img/Barbarian_icons_02_t.PNG" },
   { "src": "/img/Barbarian_icons_03_t.PNG" },
   { "src": "/img/Barbarian_icons_04_t.PNG" },
@@ -26,6 +26,19 @@ function App() {
     <div className="App">
       <h1>Magic Match</h1>
       <button onClick={shuffleCards}>New Game</button>
+
+      <div className="cardGrid">
+         { cards.map(card => (
+           <div className="card" key={card.id}>
+              <div>
+                <img className="front" src={card.src} alt="card front" />
+                <img className="back" src="/img/Barbarian_icons_113_t.png" alt="card back"/>
+              </div>
+           </div>
+         ))
+          
+         }
+      </div>
     </div>
   );
 }
