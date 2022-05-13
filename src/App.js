@@ -3,12 +3,12 @@ import './App.css';
 import SingleCard from './components/SingleCard';
 
 const cardImages = [
-  { "src": "img/Barbarian_icons_01_t.PNG" },
-  { "src": "/img/Barbarian_icons_02_t.PNG" },
-  { "src": "/img/Barbarian_icons_03_t.PNG" },
-  { "src": "/img/Barbarian_icons_04_t.PNG" },
-  { "src": "/img/Barbarian_icons_05_t.PNG" },
-  { "src": "/img/Barbarian_icons_06_t.PNG" }
+  { "src": "img/Barbarian_icons_01_t.PNG", matched: false },
+  { "src": "/img/Barbarian_icons_02_t.PNG", matched: false },
+  { "src": "/img/Barbarian_icons_03_t.PNG", matched: false },
+  { "src": "/img/Barbarian_icons_04_t.PNG", matched: false },
+  { "src": "/img/Barbarian_icons_05_t.PNG", matched: false },
+  { "src": "/img/Barbarian_icons_06_t.PNG", matched: false }
 ]
 function App() {
   const [cards, setCards] = useState([])
@@ -34,10 +34,18 @@ function App() {
   useEffect(() => {
     if(choiceOne && choiceTwo){
       if(choiceOne.src === choiceTwo.src){
-        console.log("match")
+        setCards(prevCards => {
+          return prevCards.map(card => {
+            if(card.src === choiceOne.src) {
+              return { ...card, matched: true } 
+            } else {
+              return card
+            }
+          })
+        })
         resetTurn()
       } else {
-        console.log("not match")
+        
         resetTurn()
       }
     }
