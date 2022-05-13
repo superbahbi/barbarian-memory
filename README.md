@@ -1,8 +1,10 @@
 # Memory Game
 A memory game written in React
 
-![newgame](https://user-images.githubusercontent.com/1689092/168209396-ed169271-830e-4c14-94ca-69e00c358c1e.PNG)
-![endgame](https://user-images.githubusercontent.com/1689092/168209397-ad8eb21c-c4eb-4297-90b6-76507e160eda.PNG)
+## Screenshot
+![newgame](https://user-images.githubusercontent.com/1689092/168209704-f283bd9d-7d1d-49bc-89bd-1559fbbfe909.PNG)
+![endgame](https://user-images.githubusercontent.com/1689092/168209708-7be97c50-aca1-4c8c-b633-81c54ca4340c.PNG)
+
 
 ## Available Scripts
 
