@@ -1,4 +1,4 @@
-# Memory Game
+# Barbarian Match
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b43a3958-e452-4992-bd02-20ac05a2a70b/deploy-status)](https://app.netlify.com/sites/bucolic-begonia-21dfae/deploys)
 
 A memory game written in React
